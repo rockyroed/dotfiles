@@ -17,3 +17,5 @@ alias fpu='flatpak update'
 alias hyprc='sudo nvim ~/.config/hypr/hyprland.conf'
 
 PS1='[\u@\h \W]\$ '
+
+PATH=~/.console-ninja/.bin:$PATH
