@@ -1,3 +1,4 @@
+# Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
@@ -102,7 +103,7 @@ format = '[ $user ]($style)'
 [directory]
 style = "fg:mantle bg:peach"
 format = "[ $path ]($style)"
-truncation_length = 3
+truncation_length = 4
 truncation_symbol = "…/"
 
 [directory.substitutions]
@@ -172,7 +173,7 @@ style = "bg:mantle"
 format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 
 [time]
-disabled = false
+disabled = true
 time_format = "%r"
 style = "bg:peach"
 format = '[[ 🕙$time ](fg:mantle bg:purple)]($style)'
@@ -181,11 +182,9 @@ use_12hr = true
 [line_break]
 disabled = false
 
+# Starship modules
 [character]
-disabled = false
-success_symbol = '[](bold fg:green)'
-error_symbol = '[](bold fg:red)'
-vimcmd_symbol = '[](bold fg:creen)'
-vimcmd_replace_one_symbol = '[](bold fg:purple)'
-vimcmd_replace_symbol = '[](bold fg:purple)'
-vimcmd_visual_symbol = '[](bold fg:lavender)'
+# Note the use of Catppuccin color 'peach'
+success_symbol = "[[󰄛](green) ❯](peach)"
+error_symbol = "[[󰄛](red) ❯](peach)"
+vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
