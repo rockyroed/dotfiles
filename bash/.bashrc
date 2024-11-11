@@ -10,7 +10,7 @@ eval "$(starship init bash)"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-alias yay='paru'
+# alias yay='paru'
 alias yeet='paru -R'
 alias audio='bash ~/bin/headphone_audio.sh'
 alias fpu='flatpak update'
