@@ -12,9 +12,9 @@ alias grep='grep --color=auto'
 
 # alias yay='paru'
 alias yeet='paru -R'
-alias audio='bash ~/bin/headphone_audio.sh'
-alias fpu='flatpak update'
-alias hyprc='sudo nvim ~/.config/hypr/hyprland.conf'
+alias audio='~/bin/headphone_audio.sh'
+alias xdph='~/bin/xdph.sh'
+# alias fpu='flatpak update'
 
 PS1='[\u@\h \W]\$ '
 
