@@ -13,7 +13,7 @@
 	yel: #d8a657;
 	txt: #ffffff;
 
-	font: "FiraCode Nerd Font Mono 12";
+	font: "JetBrainsMono Nerd Font 12";
 
 	foreground: @fgd;
 	background: @bg;
