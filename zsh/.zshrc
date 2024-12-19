@@ -28,13 +28,34 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 
-export QT_QPA_PLATFORMTHEME=gtk3
-
+# aliases
 alias grep='grep --color=auto'
-alias yeet='paru -R'
+
+alias pr='paru'
+alias prd='paru -R'
+
 alias ls='eza --icons -F -H --git'
 alias lsa='eza -alF --icons -F -H --git'
+
 alias c='clear'
+alias v='nvim'
+
+alias .='cd'
+alias ..='cd ..'
+alias cdp='cd ~/Pictures/'
+alias cdd='cd ~/Downloads/'
+alias cddot='cd ~/repos/dotfiles/'
+alias cdconf='cd ~/.config/'
+alias cdh='cd /run/media/roed/HDD/'
+
+alias gstat='git status'
+alias gadd='git add'
+alias gcom='git commit -m'
+alias gpush='git push'
+alias gpusho='git push origin'
+alias gcheck='git checkout'
+alias gmerge='git merge'
+
 alias tsu='sudo timeshift --create && sudo timeshift --delete'
 
 # Lines configured by zsh-newuser-install
@@ -56,9 +77,15 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
+# vim keybindings
+bindkey -v
+export KEYTIMEOUT=1
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^v' edit-command-line
+bindkey '^l' autosuggest-accept
+
+# fix backspace bug when switching modes
+bindkey '^?' backward-delete-char
 
 zstyle :compinstall filename '/home/roed/.zshrc'
 
