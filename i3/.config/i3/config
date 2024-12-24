@@ -31,7 +31,7 @@ exec_always --no-startup-id autotiling
 exec --no-startup-id picom
 exec --no-startup-id xinput set-prop 19 'libinput Accel Profile Enabled' 0, 1
 exec_always --no-startup-id ~/bin/headphone_audio.sh
-exec_always --no-startup-id feh --bg-fill $HOME/wallpapers/ekko-powder-landscape-avg.png
+exec_always --no-startup-id feh --bg-fill $HOME/wallpapers/ekko-powder.png
 
 # monitor positions
 # left secondary

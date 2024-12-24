@@ -55,6 +55,10 @@ alias gpush='git push'
 alias gpusho='git push origin'
 alias gcheck='git checkout'
 alias gmerge='git merge'
+alias guser='git config user.name'
+alias gemail='git config user.email'
+alias guserg='git config --global user.name'
+alias gemailg='git config --global user.email'
 
 alias tsu='sudo timeshift --create && sudo timeshift --delete'
 
