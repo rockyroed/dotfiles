@@ -167,7 +167,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # force specific apps to run on their workspace
 assign [class="discord"] $ws7
-assign [class="zen-beta"] $ws1
+assign [class="firefox"] $ws1
 assign [class="Spotify"] $ws9
 assign [class="YouTube Music"] $ws9
 assign [class="obs"] $ws10
