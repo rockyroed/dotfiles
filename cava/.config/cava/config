@@ -211,33 +211,16 @@
 ; waveform = 0
 
 [color]
-
-# Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
-# Or defined by hex code '#xxxxxx' (hex code must be within ''). User defined colors requires
-# a terminal that can change color definitions such as Gnome-terminal or rxvt.
-# default is to keep current terminal color
-# ; background = default
-# ; foreground = default
-
-# SDL and sdl_glsl only support hex code colors, these are the default:
-# ; background = '#111111'
-# ; foreground = '#33ffff'
-
-
-# Gradient mode, only hex defined colors are supported,
-# background must also be defined in hex or remain commented out. 1 = on, 0 = off.
-# You can define as many as 8 different colors. They range from bottom to top of screen
-
-# Gruvbox
-background = '#282828'
 gradient = 1
-gradient_count = 6
-gradient_color_1 = '#d4be98'
-gradient_color_2 = '#d8a657'
-gradient_color_3 = '#a9b665'
-gradient_color_4 = '#89b482'
-gradient_color_5 = '#7daea3'
-gradient_color_6 = '#ea6962'
+
+gradient_color_1 = '#8bd5ca'
+gradient_color_2 = '#91d7e3'
+gradient_color_3 = '#7dc4e4'
+gradient_color_4 = '#8aadf4'
+gradient_color_5 = '#c6a0f6'
+gradient_color_6 = '#f5bde6'
+gradient_color_7 = '#ee99a0'
+gradient_color_8 = '#ed8796'
 
 [smoothing]
 

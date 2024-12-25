@@ -224,4 +224,4 @@ mode "resize" {
 # follow mouse on focus
 focus_follows_mouse yes
 
-include ~/.config/i3/gruvbox-material.conf
+include ~/.config/i3/catppuccin-macchiato.conf

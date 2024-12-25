@@ -10,30 +10,28 @@
     horizontal_padding = 10
     frame_width = 3
     gap_size = 3
+    frame_color = "#8aadf4"
+    separator_color = frame
     font = "FiraCode Nerd Font Mono 10"
 
     icon_theme = "rose-pine-icons"
     enable_recursive_icon_lookup = true
     corner_radius = 0
 
-    background = "#1d2021"
-    foreground = "#d4be98"
+    background = "#24273a"
+    foreground = "#cad3f5"
+    highlight = "8aadf4"
 
 [urgency_low]
-    highlight = "#d4be98"
-    frame_color = "#7daea3"
     default_icon = "dialog-information"
-    format = "<b><span foreground='#d4be98'>%s</span></b>\n%b"
+    format = "<b><span foreground='#cad3f5'>%s</span></b>\n%b"
 
 [urgency_normal]
-    highlight = "#d4be98"
-    frame_color = "#d8a657"
     default_icon = "dialog-warning"
-    format = "<b><span foreground='#d4be98'>%s</span></b>\n%b"
+    format = "<b><span foreground='#cad3f5'>%s</span></b>\n%b"
 
 [urgency_critical]
-    highlight = "#d4be98"
-    frame_color = "#ea6962"
+    frame_color = "#f5a97f"
     default_icon = "dialog-error"
     format = "<b><span foreground='#d4be98'>%s</span></b>\n%b"
 

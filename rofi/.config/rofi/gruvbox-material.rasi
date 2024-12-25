@@ -1,23 +1,24 @@
 @import "default"
 
 * {
-	bg: #1d2021;
+	bg: #24273a;
 	cur: #282828;
-	fgd: #d4be98;
+	fgd: #91d7e3;
 	cmt: #504545;
 	cya: #7daea3;
-	grn: #a9b665;
+	grn: #a6da95;
 	ora: #e78a4e;
 	pur: #d3869b;
-	red: #ea6962;
+	red: #ed8796;
 	yel: #d8a657;
 	txt: #ffffff;
+  blk: #000000;
 
 	font: "JetBrainsMono Nerd Font 12";
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @grn;
+	active-background: @fgd;
 	urgent-background: @red;
 
 	selected-background: @active-background;
@@ -74,11 +75,11 @@
 }
 #element.selected.normal {
 	background-color: @selected-background;
-	text-color:       @text;
+	text-color:       @blk;
 }
 #element.selected.urgent {
 	background-color: @selected-urgent-background;
-	text-color:       @text;
+	text-color:       @blk;
 }
 #element.selected.active {
 	background-color: @selected-active-background;
@@ -108,7 +109,7 @@
 }
 #button.selected {
 	background-color: @selected-background;
-	text-color:       @text;
+	text-color:       @blk;
 }
 #inputbar {
 	spacing:    0;
@@ -125,7 +126,7 @@
 }
 #prompt {
 	spacing:    0;
-	text-color: @grn;
+	text-color: @fgd;
 }
 #inputbar {
 	children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
