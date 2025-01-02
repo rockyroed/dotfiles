@@ -184,7 +184,6 @@ for_window [window_type="menu"]                         floating enable
 workspace $ws1 output HDMI-1
 workspace $ws2 output HDMI-1
 workspace $ws3 output HDMI-1
-workspace $ws7 output DP-1
 workspace $ws8 output DP-1
 workspace $ws9 output DP-1
 workspace $ws10 output DP-1
