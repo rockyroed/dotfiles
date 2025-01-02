@@ -1,6 +1,6 @@
 [global]
     width = 400
-    offset = 20x62
+    offset = (20, 62)
 
     progress_bar_min_width = 380
     progress_bar_max_width = 380
@@ -20,7 +20,7 @@
 
     background = "#24273a"
     foreground = "#cad3f5"
-    highlight = "8aadf4"
+    highlight = "#8aadf4"
 
 [urgency_low]
     default_icon = "dialog-information"
