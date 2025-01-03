@@ -95,6 +95,9 @@ bindkey '^l' autosuggest-accept
 # fix backspace bug when switching modes
 bindkey '^?' backward-delete-char
 
+# color scheme for eza
+export LS_COLORS="$(vivid generate catppuccin-macchiato)"
+
 zstyle :compinstall filename '/home/roed/.zshrc'
 
 autoload -Uz compinit
