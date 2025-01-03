@@ -19,7 +19,7 @@ exec --no-startup-id nm-applet
 
 # window gaps
 gaps inner 12
-gaps top 42
+gaps top 40
 
 # startup apps and scripts
 exec --no-startup-id discord
