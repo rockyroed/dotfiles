@@ -1,6 +1,7 @@
 [global]
     width = 400
-    offset = (20, 820)
+    offset = (20, 20)
+    origin = bottom-right
 
     progress_bar_min_width = 380
     progress_bar_max_width = 380
@@ -16,7 +17,7 @@
 
     icon_theme = "rose-pine-icons"
     enable_recursive_icon_lookup = true
-    corner_radius = 0
+    corner_radius = 8
 
     background = "#24273a"
     foreground = "#cad3f5"
