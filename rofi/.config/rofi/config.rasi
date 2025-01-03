@@ -13,5 +13,5 @@ configuration{
     sidebar-mode: true;
 }
 
-@theme "gruvbox-material"
+@theme "catppuccin-macchiato"
 
