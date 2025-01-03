@@ -1,6 +1,6 @@
 [global]
     width = 400
-    offset = (20, 62)
+    offset = (20, 820)
 
     progress_bar_min_width = 380
     progress_bar_max_width = 380
