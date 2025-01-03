@@ -1,6 +1,6 @@
 # remove window title and set border size
 for_window [class="^.*"] pixel 0
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 0
 
 set $mod Mod4
 
@@ -18,7 +18,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
 
 # window gaps
-gaps inner 8
+gaps inner 12
 gaps top 42
 
 # startup apps and scripts
@@ -29,6 +29,7 @@ exec --no-startup-id greenclip daemon
 exec --no-startup-id ~/apps/filen.AppImage
 exec_always --no-startup-id autotiling
 exec --no-startup-id picom
+exec --no-startup-id xborders --border-radius 8 --border-width 3 --border-rgba #91d7e3
 exec --no-startup-id xinput set-prop 19 'libinput Accel Profile Enabled' 0, 1
 exec_always --no-startup-id ~/bin/headphone_audio.sh
 exec_always --no-startup-id feh --bg-fill $HOME/wallpapers/ekko-powder-catppuccin.png
