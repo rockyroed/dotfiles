@@ -31,6 +31,8 @@ alias grep='grep --color=auto'
 alias pr='paru'
 alias prd='paru -R'
 
+alias ff='fastfetch -l small'
+
 alias ls='eza --icons -F -H --git'
 alias lsa='eza -alF --icons -F -H --git'
 
@@ -47,6 +49,7 @@ alias cdh='cd /run/media/roed/HDD/'
 
 alias gstat='git status'
 alias gadd='git add'
+alias grestore='git restore --staged'
 alias gcom='git commit -m'
 alias gpull='git pull'
 alias gpullo='git pull origin'
