@@ -107,3 +107,6 @@ compinit
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# Created by `pipx` on 2025-01-04 09:40:28
+export PATH="$PATH:/home/roed/.local/bin"
