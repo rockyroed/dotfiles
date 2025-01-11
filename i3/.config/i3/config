@@ -19,7 +19,6 @@ exec --no-startup-id nm-applet
 
 # window gaps
 gaps inner 12
-gaps top 40
 
 # startup apps and scripts
 exec --no-startup-id discord
@@ -29,15 +28,12 @@ exec --no-startup-id greenclip daemon
 exec --no-startup-id ~/apps/filen.AppImage
 exec_always --no-startup-id autotiling
 exec --no-startup-id picom
-exec --no-startup-id xborders --border-radius 8 --border-width 3 --border-rgba #91d7e3
 exec --no-startup-id xinput set-prop 19 'libinput Accel Profile Enabled' 0, 1
-exec_always --no-startup-id ~/bin/headphone_audio.sh
+exec --no-startup-id ~/bin/headphone_audio.sh
+exec --no-startup-id ~/bin/xborders.sh
 exec_always --no-startup-id feh --bg-fill $HOME/wallpapers/ekko-powder-catppuccin.png
 
 # monitor positions
-# left secondary
-# exec_always --no-startup-id xrandr --output HDMI-1 --primary --mode 1440x900 --pos 1366x0 --rotate normal --output HDMI-2 --off --output DP-1 --mode 1366x768 --pos 0x132 --rotate normal --output HDMI-3 --off
-# right secondary
 exec_always --no-startup-id xrandr --output HDMI-1 --primary --mode 1440x900 --pos 0x0 --rotate normal --output HDMI-2 --off --output DP-1 --mode 1366x768 --pos 1440x66 --rotate normal --output HDMI-3 --off
 
 # kill any hanging polybar processes
@@ -48,8 +44,8 @@ exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id --no-startup-id ~/.config/i3/volume_up.sh && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -121,8 +117,8 @@ bindsym $mod+Ctrl+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+Shift+s layout stacking
-bindsym $mod+w layout tabbed
+# bindsym $mod+Shift+s layout stacking
+# bindsym $mod+w layout tabbed
 bindsym $mod+s layout toggle split
 
 # toggle tiling / floating
@@ -185,6 +181,7 @@ for_window [window_role="task_dialog"]                  floating enable
 for_window [window_role="Preferences"]                  floating enable
 for_window [window_type="dialog"]                       floating enable 
 for_window [window_type="menu"]                         floating enable
+for_window [class="kcalc"]				floating enable
 
 # specify which monitors the workspaces defaults
 workspace $ws1 output HDMI-1
