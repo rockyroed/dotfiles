@@ -170,16 +170,18 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # force specific apps to run on their workspace
 assign [class="firefox"] $ws1
 assign [class="Code"] $ws3
-assign [class="discord"] $ws8
+assign [class="discord"] $ws7
+assign [class="Signal"] $ws8
 assign [class="Spotify"] $ws9
 assign [class="obs"] $ws10
+for_window [class="firefox" title="Messenger call — Mozilla Firefox"] move to workspace $ws8
 
 # force specific apps to float
 for_window [window_role="pop-up"]                       floating enable
-for_window [window_role="bubble"]                       floating enable 
+for_window [window_role="bubble"]                       floating enable
 for_window [window_role="task_dialog"]                  floating enable
 for_window [window_role="Preferences"]                  floating enable
-for_window [window_type="dialog"]                       floating enable 
+for_window [window_type="dialog"]                       floating enable
 for_window [window_type="menu"]                         floating enable
 for_window [class="kcalc"]				floating enable
 
@@ -187,6 +189,7 @@ for_window [class="kcalc"]				floating enable
 workspace $ws1 output HDMI-1
 workspace $ws2 output HDMI-1
 workspace $ws3 output HDMI-1
+workspace $ws7 output DP-1
 workspace $ws8 output DP-1
 workspace $ws9 output DP-1
 workspace $ws10 output DP-1
