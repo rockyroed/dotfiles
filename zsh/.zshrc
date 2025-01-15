@@ -38,6 +38,7 @@ alias lsa='eza -alF --icons -F -H --git'
 
 alias c='clear'
 alias v='nvim'
+alias sv='sudo nvim'
 
 alias .='cd'
 alias ..='cd ..'
