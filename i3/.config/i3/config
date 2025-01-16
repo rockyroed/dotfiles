@@ -61,7 +61,7 @@ floating_modifier $mod
 bindsym $mod+Return exec kitty
 
 # kill focused window
-bindsym $mod+c kill
+bindsym $mod+q kill
 
 # lock i3
 bindsym $mod+Shift+x exec betterlockscreen -l
