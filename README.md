@@ -1,3 +1,6 @@
+# ⚠️ This repository is currently unmaintained.
+As I've been migrating from EndeavourOS to NixOS, this repository is now unmaintained because I'm refactoring my dotfiles to be more nix-friendly. Here's my [nixos-config](https://github.com/rockyroed/nixos-config) repository, if you're interested.
+
 # 🛠️ My Linux Dotfiles
 
 ![image](screenshots/screen.png)
